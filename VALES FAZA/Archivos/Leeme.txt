@@ -1,0 +1,40 @@
+﻿
+Los siguientes programas están ubicados en Mis Documentos\Programas
+
+1) Es necesario instalar los siguientes programas
+
+	a) Visual C++ Redistributable para Visual Studio 2005x64.msi
+	b) Visual C++ Redistributable para Visual Studio 2005x86.msi
+
+	c) Visual C++ Redistributable para Visual Studio 2008x64.msi
+	d) Visual C++ Redistributable para Visual Studio 2008x86.msi
+
+	e) Visual C++ Redistributable para Visual Studio 2010x64.msi
+	f) Visual C++ Redistributable para Visual Studio 2010x86.msi
+
+	g) Visual C++ Redistributable para Visual Studio 2012x64.msi
+	h) Visual C++ Redistributable para Visual Studio 2012x86.msi
+
+	i) Visual C++ Redistributable para Visual Studio 2013x64.msi
+	j) Visual C++ Redistributable para Visual Studio 2013x86.msi
+
+	k) Visual C++ Redistributable para Visual Studio 2015-2022x64.msi
+	l) Visual C++ Redistributable para Visual Studio 2015-2022x86.msi
+
+2) El contenido del archivo "ImagenesVales.rar", hay que descargarlo en C:\, se copiará el directorio c:\ImagenesVales
+3) Darle todos los pemisos a la carpeta c:\ImagenesVales
+
+4) Es necesario ejecutar el instalador "CRRuntime_64bit_13_0_12.msi" ubicado en la carpeta "ProgramasInstalar"
+5) Instalar este programa
+6) A la carpeta creada donde está instalado este programa, darle todos los permisos
+6) En el archivo de configuración, "VALES FAZA.exe.config", en las siguientes líneas, cambiar el valor de la llave "folderpath" por
+donde fue instalado el programa
+
+	"C:\Program Files (x86)\Faza\ValesFaza\Reportes\"
+
+	<appSettings>
+		<add key="folderpath" value="C:\Users\Aplicaciones\Source\Repos\VALES-FAZA\VALES FAZA\Reportes\" />
+		<add key="servername" value="192.168.11.37"/>
+		<add key="databasename" value="vales_faza"/>
+		<add key="userid" value="sa"/>
+	</appSettings>

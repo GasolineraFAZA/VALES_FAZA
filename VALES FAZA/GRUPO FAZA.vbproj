@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9433AE1-F6A8-4E7E-AC12-DA73C5A761FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VALES_FAZA.My.MyApplication</StartupObject>
+    <RootNamespace>VALES_FAZA</RootNamespace>
+    <AssemblyName>VALES FAZA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VALES FAZA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VALES FAZA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ValesFaza.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VALES FAZA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VALES FAZA.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AMD64|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\AMD64\</OutputPath>
+    <DocumentationFile>VALES FAZA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AMD64|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\AMD64\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AMD64|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\AMD64\</OutputPath>
+    <DocumentationFile>VALES FAZA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Crystal.Reports.13.0.15.1840\lib\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Crystal.Reports.13.0.15.1840\lib\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Crystal.Reports.13.0.15.1840\lib\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Crystal.Reports.13.0.15.1840\lib\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="EncriptarDesencriptar">
+      <HintPath>..\Librerias\EncriptarDesencriptar.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.1.2.10\lib\1.1\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Spire.Barcode, Version=6.6.0.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Barcode.6.6.0\lib\net40\Spire.Barcode.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CrystalDecisions.CrystalReports.Engine" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnexoVales.Designer.vb">
+      <DependentUpon>AnexoVales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnexoVales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarCliente.Designer.vb">
+      <DependentUpon>BuscarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo.Designer.vb">
+      <DependentUpon>Catalogo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\ConnectionStringProtector.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesCodigos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientesCodigos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesDS.vb">
+      <DependentUpon>ClientesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos.vb" />
+    <Compile Include="DsValesAnexo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsValesAnexo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsValesAnexo.vb">
+      <DependentUpon>DsValesAnexo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsValesTrans.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsValesTrans.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsValesTrans.vb">
+      <DependentUpon>DsValesTrans.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuGrupoFaza.Designer.vb">
+      <DependentUpon>MenuGrupoFaza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuGrupoFaza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nuevo Articulo.designer.vb">
+      <DependentUpon>Nuevo Articulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nuevo Articulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeriodoVista.Designer.vb">
+      <DependentUpon>PeriodoVista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PeriodoVista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prueba.Designer.vb">
+      <DependentUpon>prueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="prueba.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PruebaValeTrans.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PruebaValeTrans.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CredVales.Designer.vb">
+      <DependentUpon>CredVales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CredVales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\RecepcionValeAnexo.vb">
+      <DependentUpon>RecepcionValeAnexo.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reportes\RecepcionValeCredito.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecepcionValeCredito.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RecepcionValesAnexo.Designer.vb">
+      <DependentUpon>RecepcionValesAnexo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecepcionValesAnexo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecepcionValesCredito.Designer.vb">
+      <DependentUpon>RecepcionValesCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecepcionValesCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\RptClientes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptClientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\RptValesCred.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptValesCred.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\RptValesAnexo.vb">
+      <DependentUpon>RptValesAnexo.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ValesAnexo.Designer.vb">
+      <DependentUpon>ValesAnexo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ValesAnexo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\RptValeTrasns.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptValeTrasns.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Valescred.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Valescred.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.vb">
+      <DependentUpon>Usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vales de credito.Designer.vb">
+      <DependentUpon>Vales de credito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vales de credito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vales transferencia.Designer.vb">
+      <DependentUpon>Vales transferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vales transferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ValesTransferencia.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValesTransferencia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Valesanexo.vb" />
+    <Compile Include="ValesAnexo1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValesAnexo1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Valescredanterior.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Valescredanterior.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ValesCredDs.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValesCredDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ValesCredDs.vb">
+      <DependentUpon>ValesCredDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ValesTrans.Designer.vb">
+      <DependentUpon>ValesTrans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ValesTrans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vales_credito.Designer.vb">
+      <DependentUpon>Vales_credito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vales_credito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vales_fazaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vales_fazaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Valetransferencia.Designer.vb">
+      <DependentUpon>Valetransferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Valetransferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Variables.vb" />
+    <Compile Include="VistaAnexo.Designer.vb">
+      <DependentUpon>VistaAnexo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VistaAnexo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaClientes.Designer.vb">
+      <DependentUpon>VistaClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VistaClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaCredito.Designer.vb">
+      <DependentUpon>VistaCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VistaCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaTransferencia.Designer.vb">
+      <DependentUpon>VistaTransferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VistaTransferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AnexoVales.resx">
+      <DependentUpon>AnexoVales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarCliente.resx">
+      <DependentUpon>BuscarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo.resx">
+      <DependentUpon>Catalogo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuGrupoFaza.resx">
+      <DependentUpon>MenuGrupoFaza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nuevo Articulo.resx">
+      <DependentUpon>Nuevo Articulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeriodoVista.resx">
+      <DependentUpon>PeriodoVista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prueba.resx">
+      <DependentUpon>prueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PruebaValeTrans.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PruebaValeTrans.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CredVales.resx">
+      <DependentUpon>CredVales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RecepcionValeAnexo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RecepcionValeAnexo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RecepcionValeCredito.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RecepcionValeCredito.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecepcionValesAnexo.resx">
+      <DependentUpon>RecepcionValesAnexo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecepcionValesCredito.resx">
+      <DependentUpon>RecepcionValesCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RptClientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptClientes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RptValesCred.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptValesCred.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RptValesAnexo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptValesAnexo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RptValeTrasns.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptValeTrasns.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ValesAnexo.resx">
+      <DependentUpon>ValesAnexo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Valescred.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Valescred.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValesAnexo1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>ValesAnexo1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vales de credito.resx">
+      <DependentUpon>Vales de credito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vales transferencia.resx">
+      <DependentUpon>Vales transferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ValesTransferencia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ValesTransferencia.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Valescredanterior.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Valescredanterior.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValesTrans.resx">
+      <DependentUpon>ValesTrans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vales_credito.resx">
+      <DependentUpon>Vales_credito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Valetransferencia.resx">
+      <DependentUpon>Valetransferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaAnexo.resx">
+      <DependentUpon>VistaAnexo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaClientes.resx">
+      <DependentUpon>VistaClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaCredito.resx">
+      <DependentUpon>VistaCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaTransferencia.resx">
+      <DependentUpon>VistaTransferencia.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClientesCodigos.xsc">
+      <DependentUpon>ClientesCodigos.xsd</DependentUpon>
+    </None>
+    <None Include="ClientesCodigos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClientesCodigos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ClientesCodigos.xss">
+      <DependentUpon>ClientesCodigos.xsd</DependentUpon>
+    </None>
+    <None Include="ClientesDS.xsc">
+      <DependentUpon>ClientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="ClientesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClientesDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ClientesDS.xss">
+      <DependentUpon>ClientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="DsValesAnexo.xsc">
+      <DependentUpon>DsValesAnexo.xsd</DependentUpon>
+    </None>
+    <None Include="DsValesAnexo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsValesAnexo.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsValesAnexo.xss">
+      <DependentUpon>DsValesAnexo.xsd</DependentUpon>
+    </None>
+    <None Include="DsValesTrans.xsc">
+      <DependentUpon>DsValesTrans.xsd</DependentUpon>
+    </None>
+    <None Include="DsValesTrans.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsValesTrans.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsValesTrans.xss">
+      <DependentUpon>DsValesTrans.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ValesCredDs.xsc">
+      <DependentUpon>ValesCredDs.xsd</DependentUpon>
+    </None>
+    <None Include="ValesCredDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ValesCredDs.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ValesCredDs.xss">
+      <DependentUpon>ValesCredDs.xsd</DependentUpon>
+    </None>
+    <None Include="Vales_fazaDataSet.xsc">
+      <DependentUpon>Vales_fazaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vales_fazaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vales_fazaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vales_fazaDataSet.xss">
+      <DependentUpon>Vales_fazaDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Informes\" />
+    <Folder Include="ProgramasInstalar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Archivos\Leeme.txt" />
+    <Content Include="favicon %281%29.ico" />
+    <Content Include="icono grupo faza.ico" />
+    <Content Include="Imagenes\ValesFaza.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\ValesFaza.png" />
+    <Content Include="ValesFaza.ico" />
+    <None Include="Resources\document-new.png" />
+    <None Include="Resources\Delete_1493279.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\if_Save_1493294 %281%29.png" />
+    <None Include="Resources\if_media-floppy_118856.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Project2">
+      <Guid>{2E5D64C0-18F2-4C6C-BBED-B19C3AA407AA}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Crystal.Reports.13.0.15.1840\lib\CrystalDecisions.CrystalReports.Engine.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
